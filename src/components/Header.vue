@@ -3,7 +3,7 @@
         <header>
             <!-- <h1>Task Tracker</h1> -->
             <h1>{{ title }}</h1>
-            <Button @toggle-show-add-task="toggleShowAddTask" :text='text' :color="color"/>
+            <Button v-show="homePage" @toggle-show-add-task="toggleShowAddTask" :text='text' :color="color"/>
         </header>
     </div>
 </template>
@@ -34,6 +34,15 @@
                 this.$emit('toggle-show-add-task')
             }
         },
+        computed: {
+            homePage() {
+                if(this.$route.path === '/') {
+                    return true
+                } else {
+                    return false
+                }
+            }
+        }
     }
 </script>
 

@@ -1,12 +1,6 @@
 {
   "tasks": [
     {
-      "id": 4,
-      "text": "D",
-      "day": "June 1st at 3:30pm",
-      "reminder": false
-    },
-    {
       "text": "asdasd",
       "day": "asdasd",
       "reminder": false,
@@ -15,8 +9,20 @@
     {
       "text": "fhfgh",
       "day": "ghfgh",
-      "reminder": true,
+      "reminder": false,
       "id": 7
+    },
+    {
+      "text": "This is a new day",
+      "day": "7th March 2022",
+      "reminder": true,
+      "id": 8
+    },
+    {
+      "text": "Adding the backend",
+      "day": null,
+      "reminder": false,
+      "id": 9
     }
   ]
 }
